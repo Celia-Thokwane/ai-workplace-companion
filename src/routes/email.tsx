@@ -60,7 +60,6 @@ function EmailPage() {
     setLoading(true);
     try {
       const res = await call({ data: { purpose, recipient, keyPoints, callToAction, tone } });
-      console.log("AI RES KEYS", JSON.stringify(res).slice(0, 200));
       setOutput(readAiText(res));
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Could not generate the email");
