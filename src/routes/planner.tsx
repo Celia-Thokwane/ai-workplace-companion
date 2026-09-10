@@ -5,6 +5,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 import { AiOutput } from "@/components/AiOutput";
+import { readAiText } from "@/lib/ai-result";
 import { AppLayout } from "@/components/AppLayout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -91,7 +92,7 @@ function PlannerPage() {
             .join("\n"),
         },
       });
-      setOutput(res.text);
+      setOutput(readAiText(res));
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Could not build the plan");
     } finally {
