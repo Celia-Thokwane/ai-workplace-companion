@@ -90,6 +90,8 @@ Requirements:
 - Prioritise tasks (High / Medium / Low) based on deadlines and impact.
 - Allocate specific time blocks that fit within the available time, including short breaks.
 - Do not over-schedule; leave buffer time.
+- Use ONLY the tasks listed above. Never invent extra tasks or placeholder task names.
+- Omit any detail the user did not give rather than writing a placeholder for it.
 
 Output format (plain text):
 PRIORITISED TASKS
