@@ -1,168 +1,151 @@
-# AI Workplace Companion
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive web application called AI Workplace Productivity Assistant.
+## Project Overview
 
-The app is a frontend-only AI productivity tool for professionals. Do not create a registration, login, sign-up page, database, or backend. There should be no user authentication. All AI responses should be generated dynamically by AI.
+**AI Workplace Productivity Assistant** is a modern, responsive SaaS-style web application designed to help professionals automate everyday workplace tasks using AI.
 
-Core AI Tools
+The application brings three productivity tools together in one dashboard:
 
-1. Smart Email Generator
+- **Smart Email Generator** — creates professional workplace emails in different tones.
+- **AI Task Planner** — organises tasks, prioritises workloads, and generates daily or weekly schedules.
+- **AI Research Assistant** — summarises topics or articles and provides key insights and recommendations.
 
-Generate professional workplace emails.
+The project focuses on creating a simple, professional, user-friendly AI experience without requiring user registration, authentication, or a traditional backend.
 
-Inputs: purpose, recipient/context, key points, and optional call to action.
+## Features Implemented
 
-Tone options: Formal, Friendly, Persuasive.
+### Smart Email Generator
+- Generates professional workplace emails.
+- Supports three tones:
+  - Formal
+  - Friendly
+  - Persuasive
+- Provides structured prompts for generating email content.
+- AI-generated results can be edited.
+- Generated content can be copied for use outside the application.
 
-Generate a complete email with subject, greeting, body, and closing.
+### AI Task Planner
+- Allows users to enter tasks and requirements.
+- Generates daily or weekly schedules.
+- Prioritises tasks according to importance and urgency.
+- Displays AI-generated plans in an organised format.
+- Generated plans can be edited.
 
-Allow the user to edit, copy, clear, and regenerate the AI output.
+### AI Research Assistant
+- Allows users to enter a research topic or article/content.
+- Generates summaries using AI.
+- Provides key insights and recommendations.
+- AI-generated results can be edited.
 
-2. AI Task Planner
+### Dashboard & User Experience
+- Modern SaaS-style dashboard.
+- Sidebar navigation between productivity tools.
+- Responsive design for desktop, tablet, and mobile.
+- Clean light-grey and dark-grey visual design.
+- Consistent typography throughout the application.
+- AI-generated responses use the same font as the rest of the application.
+- Clear input, output, loading, and empty states.
+- No registration, sign-up, login, or authentication pages.
 
-Generate daily or weekly schedules from the user's goals and tasks.
+### Responsible AI
+- Includes a Responsible AI disclaimer.
+- Reminds users to review AI-generated information for accuracy, context, bias, relevance, and appropriateness.
+- Encourages human judgement when using AI-generated content professionally.
 
-Allow users to enter tasks, deadlines, priorities, and available time.
+## Technologies and Tools Used
 
-AI should prioritise tasks and create a realistic schedule.
+- **Lovable** — used to design and build the application.
+- **React** — component-based frontend application structure.
+- **Vite** — frontend development and build tooling.
+- **Tailwind CSS** — responsive styling and UI design.
+- **JavaScript / TypeScript** — application logic and interactivity.
+- **Generative AI / AI prompting** — used to generate emails, task plans, summaries, insights, and recommendations.
+- **GitHub** — source-code version control and project repository.
+- **Responsive Web Design** — ensures the application adapts to different screen sizes.
 
-Display tasks clearly with priority levels and suggested time allocations.
+> **Note:** The exact framework/library versions are defined by the project's dependency files and configuration.
 
-Allow users to edit, complete, delete, copy, and regenerate the plan.
+## Setup Instructions
 
-3. AI Research Assistant
+### 1. Clone the repository
 
-Summarise topics or user-provided articles/text.
+```bash
+git clone <your-repository-url>
+```
 
-Provide useful insights, key findings, and recommendations.
+### 2. Navigate to the project folder
 
-Allow the user to enter a topic, text, or article URL.
+```bash
+cd <project-folder>
+```
 
-Provide structured AI output with headings and bullet points.
+### 3. Install dependencies
 
-Allow users to edit, copy, clear, and regenerate results.
+```bash
+npm install
+```
 
-Dashboard & Navigation
+### 4. Start the development server
 
-Create a modern SaaS-style dashboard with:
-
-Left sidebar navigation
-
-Dashboard
-
-Smart Email Generator
-
-AI Task Planner
-
-AI Research Assistant
-
-Clean dashboard cards for the three tools
-
-Simple productivity overview
-
-Quick-action buttons
-
-The sidebar should be responsive and collapse appropriately on smaller screens.
-
-Design
-
-Use a clean, modern, professional SaaS design.
-
-Primary colours:
-
-Light calming blue
-
-Dark grey
-
-Use:
-
-Modern typography
-
-Clean cards
-
-Rounded corners
-
-Subtle shadows
-
-Professional icons
-
-Good spacing
-
-Clear visual hierarchy
-
-Responsive desktop, tablet, and mobile layouts
-
-Avoid excessive animations, bright colours, and unnecessary decorative elements.
-
-AI Behaviour
-
-Use structured AI prompts for each tool so that responses are relevant, professional, well-organised, and directly based on the user's inputs.
-
-All generated content must be AI-generated. Do not rely on hard-coded example responses as the main functionality.
-
-If an AI API is required but unavailable, create the frontend in a way that is ready for an AI API connection without building a backend, database, authentication system, or sign-up flow.
-
-Editable Outputs
-
-Every AI-generated result must appear in an editable area.
-
-Provide actions such as:
-
-Edit
-
-Copy
-
-Regenerate
-
-Clear
-
-Responsible AI
-
-Include a small Responsible AI disclaimer:
-
-"AI-generated content may contain errors or inaccuracies. Always review and verify AI outputs before using them for important professional decisions."
-
-Important
-
-Keep the implementation simple and frontend-focused because this is being built using a limited Lovable free plan.
-
-Do not add:
-
-Registration
-
-Login
-
-Sign-up
-
-User accounts
-
-Database
-
-Backend dashboard
-
-Payment system
-
-Subscription system
-
-Unnecessary pages
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/edbfd23a-3556-4bb2-a0f2-670a4ac3d3ad).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+### 5. Open the application
+
+After the development server starts, open the local URL displayed in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+## Project Structure
+
+The project follows a modern frontend application structure, with reusable components and separate sections for the productivity tools.
+
+Typical areas include:
+
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+├── App.*
+└── main.*
+```
+
+The exact structure may vary depending on the generated project configuration.
+
+## Project Goals
+
+The main goals of this project are to demonstrate how generative AI can support workplace productivity by helping users:
+
+- Write professional communications.
+- Organise and prioritise tasks.
+- Plan their workday or week.
+- Research and summarise information.
+- Generate useful insights and recommendations.
+- Work collaboratively with AI while maintaining human oversight.
+
+## Responsible Use
+
+AI-generated content may contain inaccuracies, omissions, or unintended bias. Users should review and verify AI-generated information before relying on it for professional communication, research, planning, or important decisions.
+
+This application is intended as a productivity assistant and does not replace professional judgement.
+
+## Future Improvements
+
+Possible future enhancements include:
+
+- Calendar integration.
+- Saving and exporting generated content.
+- Additional email tones and templates.
+- Document and file analysis.
+- Research source management.
+- Task reminders and notifications.
+- AI conversation history.
+- Additional workplace productivity tools.
+
+## License
+
+This project is available for educational and portfolio purposes.
