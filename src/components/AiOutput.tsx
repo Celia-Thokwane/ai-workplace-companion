@@ -58,7 +58,7 @@ export function AiOutput({
         <Textarea
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="min-h-80 flex-1 resize-y rounded-xl font-mono text-[13px] leading-relaxed"
+          className="min-h-80 flex-1 resize-y rounded-xl text-sm leading-relaxed"
         />
       ) : (
         <div className="flex flex-1 items-center justify-center rounded-xl border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
